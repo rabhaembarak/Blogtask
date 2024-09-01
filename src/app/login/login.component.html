@@ -1,0 +1,26 @@
+<body>
+  <br><br><br><br><br><br><br>
+  <mat-card class="login-card" [@cardAnimation]>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="logindata(loginForm)" class="form-box">
+        <h3 class="mat-headline center-text">Login</h3>
+        
+        <mat-form-field class="form-group" appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput formControlName="username" id="username" placeholder="Enter Username"/>
+        </mat-form-field>
+        
+        <mat-form-field class="form-group" appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" id="password" placeholder="Enter Password"/>
+        </mat-form-field>
+        
+        <p>Create a new account? <a routerLink="/signup" (click)="sbtn1()">Signup</a></p>
+        <button mat-raised-button type="submit" (click)="logindata(loginForm)" class="btn-success">Login</button>
+        <br><br>
+      </form>
+    </mat-card-content>
+  </mat-card>
+
+  <router-outlet></router-outlet>
+</body>

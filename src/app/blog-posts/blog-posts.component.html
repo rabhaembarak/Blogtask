@@ -1,0 +1,20 @@
+<div class="json-list">
+  <div *ngFor="let post of posts" class="json-item">
+    <div class="json-card" [ngStyle]="{'background-image': 'url(' + post.imageUrl + ')'}">
+      <h1 class="json-name"><strong>{{ post.title }}</strong></h1>
+      <p class="author">Blog By <strong>{{ post.author }}</strong></p>
+      <div class="json-footer">
+        <button class="read-more">Read More</button>
+      </div>
+    </div>
+    <div class="comment-section">
+      <textarea class="comment-box" [(ngModel)]="post.newComment" placeholder="Add a comment..."></textarea>
+      <button class="comment-submit" (click)="addComment(post, post.newComment)">Submit</button>
+    </div>
+    <div *ngIf="post.comments.length > 0" class="comments-list">
+      <div *ngFor="let comment of post.comments" class="comment">
+        {{ comment }}
+      </div>
+    </div>
+  </div>
+</div>

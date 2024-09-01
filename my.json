@@ -1,0 +1,44 @@
+{
+    "signup": [
+      {
+        "fname": "Subbu",
+        "lname": "k",
+        "email": "sanjaysurya2527@gmail.com",
+        "phone": "08688029341",
+        "password": "subbu",
+        "id": 1
+      },
+      {
+        "fname": "Karthika",
+        "lname": "p",
+        "email": "sanjaysurya2527@gmail.com",
+        "phone": "08688029341",
+        "password": "kar",
+        "id": 2
+      },
+      {
+        "fname": "Sanjay",
+        "lname": "Surya",
+        "email": "sanjaysurya2527@gmail.com",
+        "phone": "08688029341",
+        "password": "Sanjay",
+        "id": 3
+      },
+      {
+        "fname": "Don",
+        "lname": "Don",
+        "email": "sanjaysurya2527@gmail.com",
+        "phone": "08688029341",
+        "password": "Don",
+        "id": 4
+      },
+      {
+        "fname": "Feroz",
+        "lname": "Gandhi",
+        "email": "sanjaysurya2527@gmail.com",
+        "phone": "08688029341",
+        "password": "Feroz",
+        "id": 5
+      }
+    ]
+  }

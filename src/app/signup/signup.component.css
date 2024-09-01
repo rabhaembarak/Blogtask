@@ -1,0 +1,92 @@
+/* Global Styles */
+body {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(115deg, #d0d0d0 10%, #0044cc 90%);
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Box */
+.form-box {
+  max-width: 400px;
+  margin: 0% auto;
+  padding: 50px;
+  border: 3px solid #0044cc; /* Updated border color */
+  border-radius: 18px;
+  background-color: #fff; /* Card background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #0044cc; /* Label color */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #0044cc; /* Updated border color */
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #0044cc;
+  border-color: #0044cc;
+}
+
+input::placeholder {
+  text-align: center; /* Center align the placeholder text */
+}
+
+/* Button */
+.btn-success {
+  width: 100%;
+  margin-top: 16px;
+  background-color: #0044cc; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #0033aa; /* Darker shade on hover */
+}
+
+/* Center Text */
+.center-text {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0044cc; /* Updated color */
+}
+
+/* NSL Icon */
+#new-icon {
+  margin-left: 200px;
+  margin-top: -350px;
+  width: 300px;
+  height: 300px;
+}

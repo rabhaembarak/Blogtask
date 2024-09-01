@@ -1,0 +1,23 @@
+<div class="flex-container">
+  <button mat-button routerLink="/myhome" routerLinkActive="active">
+    Home
+  </button>
+  <button mat-button routerLink="/home" routerLinkActive="active">
+    Posts
+  </button>
+ 
+  <button mat-button routerLink="/form" routerLinkActive="active" *ngIf="isVisible">
+    New Blog
+  </button>
+  <button mat-button routerLink="/search" routerLinkActive="active" *ngIf="isVisible">
+    Search
+  </button>
+  <button mat-button routerLink="/login" routerLinkActive="active" *ngIf="Visible">
+    Account
+  </button>
+  <button mat-button routerLink="/profile" routerLinkActive="active" *ngIf="isVisible">
+    Profile
+  </button>
+</div>
+
+<router-outlet></router-outlet>

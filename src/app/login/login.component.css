@@ -1,0 +1,95 @@
+/* Global Styles */
+body {
+  height: auto;
+  width: 100%;
+  background: linear-gradient(115deg, #d0d0d0 10%, #0044cc 90%);
+  font-family: Arial, sans-serif;
+}
+
+/* Login Card */
+.login-card {
+  margin: 0.5% auto;
+  max-width:300px;
+  border: 3px solid #0044cc; /* Updated border color */
+  border-radius: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Card background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+#username, #password {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #0044cc; /* Updated border color */
+  padding: 5 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+input::placeholder {
+  text-align: center; /* Center align the placeholder text */
+}
+
+/* Form Box */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 16px;
+}
+
+/* Headline */
+.mat-headline {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  color: #0044cc; /* Updated color */
+}
+
+/* Button */
+.btn-success {
+  width: 100%;
+  margin-top: 16px;
+  background-color: #0044cc; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #0033aa; /* Darker shade on hover */
+}
+
+/* Center Text */
+.center-text {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0044cc; /* Updated color */
+}
+
+/* Form Field */
+.mat-form-field {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 16px;
+}
+
+/* NSL Icon */
+#nsl-icon {
+  width: 300px;
+  height: 300px;
+}

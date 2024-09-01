@@ -1,0 +1,86 @@
+/* Center the container on the screen */
+.create-post-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's on top of other content */
+  }
+  
+  /* Close button styles */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .close-btn:hover {
+    color: #ff0000; /* Change color on hover */
+  }
+  
+  /* Heading styles */
+  .create-post-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative; /* Ensure heading doesn’t interfere with close button */
+  }
+  
+  /* Form styles */
+  .create-post-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Label styles */
+  .create-post-container label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Input and textarea styles */
+  .create-post-container input,
+  .create-post-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Textarea specific styles */
+  .create-post-container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  /* Button styles */
+  .create-post-container button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .create-post-container button[type="submit"]:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,16 @@
+<div class="create-post-container">
+  <button class="close-btn" (click)="onClose()">×</button>
+  <h2>Create a New Blog Post</h2>
+  <form (ngSubmit)="onSubmit()" #postForm="ngForm">
+    <label for="title">Title:</label>
+    <input id="title" [(ngModel)]="post.nameb" name="nameb" required />
+
+    <label for="author">Author:</label>
+    <input id="author" [(ngModel)]="post.aname" name="aname" required />
+
+    <label for="content">Content:</label>
+    <textarea id="content" [(ngModel)]="post.blog" name="blog" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

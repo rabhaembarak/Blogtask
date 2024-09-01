@@ -1,0 +1,104 @@
+.flex-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #184e6a; */
+  background-color: #283140;
+
+  display: flex;
+  align-items: center;
+  height: 100px;
+  
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: rgb(89, 52, 3) solid;
+    cursor: pointer;
+    font-size: 24px;
+    align-self: center;
+    height: 48px; 
+    width: 12px;
+    flex: 1;
+    margin: 0 5px;
+    padding-top: auto;
+    padding-bottom: auto; 
+}
+
+
+  
+
+
+
+
+button:hover {
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+.active {
+  background-color: grey;
+}
+
+.animated-card {
+  margin: 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: cardAnimation 1s ease-out;
+}
+
+@keyframes cardAnimation {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animated-heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  color: #0d0080;
+  animation: headingAnimation 5s ease-in-out;
+}
+
+@keyframes headingAnimation {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+@media (max-width: 767px) {
+  .navbar-nav.flex-column {
+    background-color: #c2c2c2;  
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding-top: 1rem;
+    width: 250px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-nav.flex-column.show {
+    transform: translateX(0);
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff; /* Customize the color of the hamburger icon */
+  }
+}

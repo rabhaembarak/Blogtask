@@ -1,0 +1,29 @@
+<div class="homebar">
+  <div class="home-heading">Blog Posts</div>
+  <div>
+    <button class="logout-button" (click)="openCreatePostDialog()">Create Post</button>
+    <button class="logout-button" (click)="logout()">Logout</button>
+  </div>
+</div>
+<div class="json-list">
+  <div *ngIf="jsonData.length === 0">No blog posts yet. Create and post one!</div>
+  <div class="json-item" *ngFor="let post of jsonData">
+    <div class="json-card">
+      <h1 class="json-name"><strong>{{ post.nameb }}</strong></h1>
+      <p class="author">Blog By <strong>{{ post.aname }}</strong></p>
+      <div class="json-content">
+        <p>{{ post.blog }}</p>
+      </div>
+    </div>
+    <div class="comment-section">
+      <div class="comments-list">
+        <div *ngFor="let comment of post.comments">{{ comment.text }}</div>
+      </div>
+      <textarea class="comment-box" [(ngModel)]="post.newComment" placeholder="Add a comment..."></textarea>
+      <button class="comment-submit" (click)="submitComment(post.id)">Comment</button>
+      <button class="comment-submit" (click)="deletePost(post.id)">Delete</button>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
